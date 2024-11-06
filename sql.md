@@ -1,11 +1,11 @@
-## E-Health Care System has SQL injection vulnerability
+## E-Health Care System has SQL injection vulnerability via doctor_login.php
 
 ## supplier
 https://code-projects.org/e-health-care-system-in-php-css-js-and-mysql-free-download/
 ## Vulnerability file
-/Doctor/updating_consulting_hour.php
+/Doctor/doctor_login.php
 ## describe
-An unrestricted SQL injection attack exists in the  E-Health Care System. The parameters that can be controlled are as follows: email.  This function executes the email  parameter into the SQL statement without any restrictions.  A malicious attacker could exploit this vulnerability to obtain sensitive information in the server database. Or bypass the login function by sql injection.
+An unrestricted SQL injection attack exists in the  E-Health Care System. The parameters that can be controlled are as follows: email in doctor_login.php.  This function executes the email  parameter into the SQL statement without any restrictions.  A malicious attacker could exploit this vulnerability to obtain sensitive information in the server database. Or bypass the login function by sql injection.
 ## code analysis
 The email parameter in Doctor/doctor_login.php  is controlled and is directly carried into the SQL statement for execution, resulting in SQL injection.
 
